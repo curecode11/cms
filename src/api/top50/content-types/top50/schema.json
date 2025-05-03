@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "top50s",
+  "info": {
+    "singularName": "top50",
+    "pluralName": "top50s",
+    "displayName": "Top50",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "slug": {
+      "type": "uid",
+      "targetField": "name"
+    },
+    "name": {
+      "type": "string"
+    },
+    "articles": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::article.article",
+      "mappedBy": "top_50"
+    }
+  }
+}

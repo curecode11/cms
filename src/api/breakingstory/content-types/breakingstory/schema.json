@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "breakingstories",
+  "info": {
+    "singularName": "breakingstory",
+    "pluralName": "breakingstories",
+    "displayName": "Breakingstory"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "title": {
+      "type": "blocks",
+      "required": true
+    }
+  }
+}
