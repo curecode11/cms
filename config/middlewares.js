@@ -19,7 +19,7 @@ module.exports = [
   {
     name: 'strapi::cors',
     config: {
-      origin: ['https://bhartinews.vercel.app/'], // <-- replace with your real frontend URL
+      origin: ['https://bhartinews.vercel.app'], // <-- replace with your real frontend URL
       methods: ['GET', 'POST', 'PUT', 'DELETE'],
       headers: '*',
       credentials: true,
