@@ -11,20 +11,18 @@
 //   'strapi::public',
 // ];
 
-
 module.exports = [
   'strapi::logger',
   'strapi::errors',
-  'strapi::security',
   {
     name: 'strapi::cors',
     config: {
-      origin: ['https://bhartinews.vercel.app'], // <-- replace with your real frontend URL
+      origin: '*', // Allow all origins (not recommended for production)
       methods: ['GET', 'POST', 'PUT', 'DELETE'],
-      headers: '*',
-      credentials: true,
+      headers: ['Content-Type', 'Authorization'],
     },
   },
+  'strapi::security',
   'strapi::poweredBy',
   'strapi::query',
   'strapi::body',
